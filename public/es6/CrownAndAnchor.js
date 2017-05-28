@@ -58,7 +58,8 @@ function mainGame()
     dices = [];
   }
 
-  console.log("Pences left are: " + player.startingPences);
+  //console.log("Pences left are: " + player.startingPences);
+  console.log(`Pences left are: ${player.startingPences}`);
 
   var outcome = player.startingPences <= 0 ? "You lose!" : "You win!";
   console.log(outcome);
@@ -138,63 +139,3 @@ function randomNumber(from, upto)
 {
   return Math.floor(Math.random() * (upto - from + 1)) + from;
 }
-
-
-// IDK how to use arrow functions properly
-//var getRandomCardID = (deck) => randomNumber(0, deck.length - 1);
-
-
-// JS can't into function overloading
-/*function randomNumber(upTo)
-{
-  return randomNumber(0, upTo);
-}
-
-function randomNumber(from, upTo)
-{
-  return Math.floor((Math.random() * upTo) + from);
-}*/
-
-/*const symbols = [
-  const Crown = Symbol(),
-  const Anchor = Symbol(),
-  const Heart = Symbol(),
-  const Club = Symbol(),
-  const Spade = Symbol(),
-  const Diamond = Symbol(),
-]*/
-
-/*const symbols = [
-  crown = Symbol(),
-  anchor = Symbol(),
-  heart = Symbol(),
-  club = Symbol(),
-  spade = Symbol(),
-  diamond = Symbol(),
-];*/
-
-/*const symbols = {
-
-}*/
-
-// Allegedly, Symbols don't have a String Representation
-/*const crown = Symbol(),
-  anchor = Symbol(),
-  heart = Symbol(),
-  club = Symbol(),
-  spade = Symbol(),
-  diamond = Symbol();
-
-const symbols = [crown, anchor, heart, club, spade, diamond];
-
-const random = symbols[Math.floor(Math.random() * symbols.length)];
-
-var test = ['1', '2', '3'];
-var len = test[Math.floor(Math.random() * test.length)];
-
-
-console.log(random.prototype.toString());
-//var str = test[0];
-//console.log(test.length);
-console.log(len);*/
-
