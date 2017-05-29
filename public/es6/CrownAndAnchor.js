@@ -33,7 +33,7 @@ var player = { startingPences: 50 };
 // Constants
 const winLimit = 50 * 2;
 const loseLimit = 0;
-const deck = ["Crown", "Anchor", "Heart", "Club", "Spade", "Diamond"];
+const deck = ['Crown', 'Anchor', 'Heart', 'Club', 'Spade', 'Diamond'];
 
 // Arrays to save the bets and the dices.
 var currentBets = [];
@@ -61,7 +61,7 @@ function mainGame()
   //console.log("Pences left are: " + player.startingPences);
   console.log(`Pences left are: ${player.startingPences}`);
 
-  var outcome = player.startingPences <= 0 ? "You lose!" : "You win!";
+  var outcome = player.startingPences <= 0 ? 'You lose!' : 'You win!';
   console.log(outcome);
 }
 
