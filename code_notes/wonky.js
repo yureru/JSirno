@@ -46,3 +46,17 @@ const crown = Symbol(),
   diamond = Symbol();
 
 const symbols = [crown, anchor, heart, club, spade, diamond];
+
+/* Operators */
+
+/*
+  Boolean operators only return boolean if the operands they're working with are booleans.
+  Otherwise, the value that determined the outcome gets returned.
+  Consider the following:
+*/
+/*
+  If suppliedOptions is an object, options will refer to suppliedOptions. Because objects (even if they are empty)
+  always evaluate to true.
+  If no options were supplied, therefore suppliedOptions is null or undefined, we will get the second value from the expression (the { name: "Default"} object.)
+*/
+const options = suppliedOptions || { name: 'Default' };
